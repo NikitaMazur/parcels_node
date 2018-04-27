@@ -14,7 +14,7 @@ module.exports = () => {
                     throw err;
                 
                 connection
-                    .query('USE parcel', function (err) {
+                    .query(`USE ${config.database}`, function (err) {
                         if (err) 
                             throw err;
                         
