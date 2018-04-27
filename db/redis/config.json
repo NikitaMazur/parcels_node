@@ -1,0 +1,4 @@
+{
+    "url": "redis://localhost/",
+    "secret": "parcel_secret_key"
+}
