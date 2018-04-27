@@ -54,6 +54,6 @@ app.use(function (err, req, res, next) {
         .send('Server error!');
 });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log('Start server');
 })
