@@ -9,7 +9,7 @@ module.exports = () => {
             throw err;
         
         connection
-            .query('CREATE DATABASE IF NOT EXISTS parcel', function (err) {
+            .query(`CREATE DATABASE IF NOT EXISTS ${config.database}`, function (err) {
                 if (err) 
                     throw err;
                 
